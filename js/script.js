@@ -112,8 +112,9 @@ const modal = () => {
     })
 
     document.addEventListener("keydown", e => {
-        if (modal.classList.contains('open') || e.which == 27) {
-            removeClass(modal, 'open');
+        if (modal.classList.contains('open') && e.which == 27) {
+            //removeClass(modal, 'open');
+            modal.click();
         }
     })
 }
