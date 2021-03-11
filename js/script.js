@@ -65,7 +65,6 @@ const accordion = () => {
     const hideAll = (arr, func) => {
         arr.forEach(el => {
             if (el.classList.contains('active')) {
-                console.log('delete');
                 func(el);
                 el.children[1].style.height = '';
             }
